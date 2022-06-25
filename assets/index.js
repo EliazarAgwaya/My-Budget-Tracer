@@ -20,3 +20,9 @@ const nameInput = document.getElementById("nameOne")
 const amountInput = document.getElementById("amountOne")
 const nameInputTwo = document.querySelector("#nameTwo")
 const amountInputTwo = document.querySelector("#amountTwo")
+
+function renderElements(){
+    myBalance.innerHTML = `Ksh. ${myObj.balance}`;
+    myIncome.innerHTML = `Ksh. ${myObj.income}`;
+    expenses.innerHTML = `Ksh. ${myObj.expense}`;
+}
