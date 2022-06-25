@@ -25,4 +25,20 @@ function renderElements(){
     myBalance.innerHTML = `Ksh. ${myObj.balance}`;
     myIncome.innerHTML = `Ksh. ${myObj.income}`;
     expenses.innerHTML = `Ksh. ${myObj.expense}`;
+
+    let aTransaction, transactionContainer, inputAmount, item, btnEl;
+
+    for(let i=0; i<myObj.transactions.length; i++){
+        item = myObj.transactions[i];
+        aTransaction = document.createElement("li");
+        aTransaction.append(myObj.transactions[i].name)
+
+        if(item.type === "income"){
+            incomeTransaction.appendChild(aTransaction)
+        }
+        else if(item.type === "expense"){
+            expenseTransaction.appendChild(aTransaction)
+        }
+
+     }
 }
