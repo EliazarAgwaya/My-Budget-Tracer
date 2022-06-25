@@ -127,6 +127,8 @@ function renderElements(){
     expenses.innerHTML = `Ksh. ${myObj.expense}`;
 
     let aTransaction, transactionContainer, inputAmount, item, btnEl;
+    incomeTransaction.innerHTML=""
+    expenseTransaction.innerHTML=""
 
     for(let i=0; i<myObj.transactions.length; i++){
         item = myObj.transactions[i];
