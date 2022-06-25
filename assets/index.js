@@ -35,6 +35,13 @@ function updateMyObj(){
             expense += item.amount;
         }
     }
+    balance=income-expense;
+   
+    myObj.balance=balance;
+    myObj.income=income;
+    myObj.expense=expense;
+
+    renderElements()
 }
 
 function renderElements(){
