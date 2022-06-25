@@ -167,3 +167,11 @@ h2 {
     color: white;
     cursor: pointer;
 }
+#incomeBtn {
+    background-color: var(--income);
+    border-radius: 10px;
+}
+#expenseBtn {
+    background-color: var(--expense);
+    border-radius: 10px;
+}
