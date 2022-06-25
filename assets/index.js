@@ -50,6 +50,13 @@ function renderElements(){
 
         transactionContainer.appendChild(inputAmount)
 
+        btnEl= document.createElement("button");
+        btnEl.setAttribute("data-id", item.id)
+        btnEl.innerHTML='Delete'
+
+        btnEl.addEventListener("click", transactionDelete)
+        transactionContainer.appendChild(btnEl)
+        aTransaction.appendChild(transactionContainer)
 
      }
 }
