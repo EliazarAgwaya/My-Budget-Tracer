@@ -21,6 +21,28 @@ const amountInput = document.getElementById("amountOne")
 const nameInputTwo = document.querySelector("#nameTwo")
 const amountInputTwo = document.querySelector("#amountTwo")
 
+function incomeAddition(){
+    let name = nameInput.value;
+    let amount = amountInput.value;
+    if(name!== "" && amount !== ""){
+        let transaction = {
+            id: uniqueId(),
+            name: nameInput.value,
+            amount: parseInt(amountInput.value),
+            type: "income"
+        };
+        myObj.transactions.push(transaction)
+    updateMyObj();
+
+    } else{
+        alert ("Please input valid data")
+    }
+
+    nameInput.value ="";
+    amountInput.value ="";
+    
+}
+
 function expenseAddition(){
     let name = nameInputTwo.value;
     let amount = amountInputTwo.value;
