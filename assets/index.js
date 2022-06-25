@@ -1,4 +1,4 @@
-const myObj={
+let myObj={
     income: 5000,
     expense: 500,
     balance: 1000,
@@ -19,7 +19,12 @@ const amountInput = document.getElementById("amountOne")
 const nameInputTwo = document.querySelector("#nameTwo")
 const amountInputTwo = document.querySelector("#amountTwo")
 
-const myExpense= function(){
+let myStorageObj = JSON.parse(localStorage.getItem("expenseTracker"));
+function myExpense () {
+   
+   if(myStorageObj !== null){
+    myObj = myStorageObj;
+   }
   
        myListeners()
        updateMyObj()
@@ -115,6 +120,8 @@ function updateMyObj(){
     myObj.balance=balance;
     myObj.income=income;
     myObj.expense=expense;
+
+    localStorage.setItem("expenseTracker", JSON.stringify(myObj))
 
     renderElements()
 }
