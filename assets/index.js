@@ -21,6 +21,11 @@ const amountInput = document.getElementById("amountOne")
 const nameInputTwo = document.querySelector("#nameTwo")
 const amountInputTwo = document.querySelector("#amountTwo")
 
+function myListeners(){
+    incomeBtn.addEventListener("click", incomeAddition)
+    expenseBtn.addEventListener("click", expenseAddition)
+}
+
 function incomeAddition(){
     let name = nameInput.value;
     let amount = amountInput.value;
