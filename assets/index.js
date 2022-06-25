@@ -8,3 +8,15 @@ const myObj={
         {id: uniqueId(), name: "Buy a phone", amount: 2000, type: "expense"}  
     ]
 }
+
+const myIncome =document.querySelector("#myIncome");
+const expenses = document.querySelector("#myExpense");
+const myBalance = document.getElementById("myBalance");
+const incomeTransaction = document.getElementById("transaction")
+const expenseTransaction =document.getElementById("expenseTransaction")
+const incomeBtn = document.getElementById("incomeBtn")
+const expenseBtn = document.getElementById("expenseBtn")
+const nameInput = document.getElementById("nameOne")
+const amountInput = document.getElementById("amountOne")
+const nameInputTwo = document.querySelector("#nameTwo")
+const amountInputTwo = document.querySelector("#amountTwo")
