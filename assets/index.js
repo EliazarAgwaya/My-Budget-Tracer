@@ -39,6 +39,17 @@ function renderElements(){
         else if(item.type === "expense"){
             expenseTransaction.appendChild(aTransaction)
         }
+        transactionContainer = document.createElement("div");
+        inputAmount = document.createElement("span");
+        if(item.type === "income") {
+            inputAmount.classList.add("income-amt")
+        }else if(item.type === "expense"){
+            inputAmount.classList.add("expense-amt")
+        }
+        inputAmount.innerHTML = `Ksh. ${item.amount}`;
+
+        transactionContainer.appendChild(inputAmount)
+
 
      }
 }
