@@ -139,3 +139,31 @@ h2 {
     border-radius: 10px;
     cursor: pointer;
 }
+.myForm{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to left, rgb(147, 243, 147), rgb(241, 139, 139));
+
+}
+.myForm form {
+    display: flex;
+    flex-direction: column;
+}
+.myForm form label {
+    padding-bottom: 10px;
+}
+.myForm form input {
+    height: 25px;
+    margin-bottom: 10px;
+}
+.myForm form button {
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+}
