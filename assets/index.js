@@ -21,6 +21,22 @@ const amountInput = document.getElementById("amountOne")
 const nameInputTwo = document.querySelector("#nameTwo")
 const amountInputTwo = document.querySelector("#amountTwo")
 
+function transactionDelete(e){
+    let id = parseInt(e.target.getAttribute("data-id"))
+    let deleteIndex;
+    for (let i=0; i<myObj.transactions.length; i++){
+        if(myObj.transactions[i].id === id){
+            deleteIndex =i;
+            break;
+        }
+    }
+
+    myObj.transactions.splice(deleteIndex,1);
+
+    updateMyObj()
+}
+
+
 function updateMyObj(){
     let balance=0;
     let income=0;
