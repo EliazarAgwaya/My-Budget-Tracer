@@ -17,3 +17,39 @@ body{
 h2 {
     font-size: 1.5em;
 }
+.incomeAndExpense {
+    display: flex;
+    box-shadow: 0px 1px 4px 1px pink;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 30px;
+    background-image: linear-gradient(to right, rgb(147, 243, 147), rgb(241, 139, 139));
+    background-size: 100%;
+    animation: bg-animation 10s infinite alternate;
+}
+.incomeContainer {
+   
+    padding-right: 200px;
+}
+@keyframes bg-animation{
+    0%{
+        background-position: right;
+    }
+    100%{
+        background-position: left;
+    }
+}
+.expenseContainer {
+    padding-left: 200px;
+}
+#myIncome, #myExpense {
+    font-size: 1.3rem;
+}
+#myIncome {
+    color: var(--income);
+}
+#myExpense {
+    color: var(--expense);
+}
