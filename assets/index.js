@@ -21,6 +21,22 @@ const amountInput = document.getElementById("amountOne")
 const nameInputTwo = document.querySelector("#nameTwo")
 const amountInputTwo = document.querySelector("#amountTwo")
 
+function updateMyObj(){
+    let balance=0;
+    let income=0;
+    let expense=0;
+    let item;
+    for(let i=0; i<myObj.transactions.length; i++){
+        item=myObj.transactions[i];
+
+        if(item.type === "income"){
+            income += item.amount;
+        }else if(item.type === "expense"){
+            expense += item.amount;
+        }
+    }
+}
+
 function renderElements(){
     myBalance.innerHTML = `Ksh. ${myObj.balance}`;
     myIncome.innerHTML = `Ksh. ${myObj.income}`;
