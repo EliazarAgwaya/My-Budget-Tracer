@@ -22,7 +22,8 @@ const nameInputTwo = document.querySelector("#nameTwo")
 const amountInputTwo = document.querySelector("#amountTwo")
 
 const myExpense= function(){
-         myListeners()
+  
+       myListeners()
        updateMyObj()
        
     
@@ -75,6 +76,10 @@ function expenseAddition(){
 
     nameInputTwo.value=""
     amountInputTwo.value=""
+}
+
+function uniqueId(){
+    return Math.random()
 }
 
 function transactionDelete(e){
