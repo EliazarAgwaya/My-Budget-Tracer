@@ -37,6 +37,28 @@
              </ul>
             </div>
          </div>
+         <div class="myForm">
+            <div>
+                <h2>New Income</h2>
+              <form onsubmit="return false">
+                <label for="nameOne">Name</label>
+                <input type="text" id="nameOne">
+                <label for="amountOne">Amount</label>
+                <input type="number" min="1" id="amountOne">
+                <button id="incomeBtn">Add Income</button>
+             </form>
+            </div>
+            <div>
+                <h2>New Expense</h2>
+             <form onsubmit="return false">
+                <label for="nameTwo">Name</label>
+                <input type="text" id="nameTwo">
+                <label for="amountTwo">Amount</label>
+                <input type="number" min="1" id="amountTwo">
+                <button id="expenseBtn">Add Expense</button>
+             </form>
+            </div>
+        </div>
     </div>
     <script src="./assets/index.js"></script>
 </body>
