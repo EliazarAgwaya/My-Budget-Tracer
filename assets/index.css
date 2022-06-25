@@ -68,3 +68,56 @@ h2 {
 .theBalance #myBalance{
     font-size: 1.5rem;
 }
+#history1{
+    background-image: linear-gradient(to bottom, rgb(182, 248, 182), rgb(245, 199, 114));
+    background-size: 300%;
+    width: 250;
+    padding: 30;
+    animation: bg-animation 5s infinite alternate;
+    border-radius: 15px;
+}
+@keyframes bg-animation{
+    0%{
+        background-position: bottom;
+    }
+    100%{
+        background-position: top;
+    }
+}
+#history2{
+    background-image: linear-gradient(to top, rgb(65, 64, 64), rgb(253, 128, 128));
+    background-size: 300%;
+    animation: bg-animation 10s infinite alternate;
+    width: 250;
+    padding: 30;
+    border-radius: 15px;
+}
+@keyframes bg-animation{
+    0%{
+        background-position: top;
+    }
+    100%{
+        background-position: bottom;
+    }
+}
+.myTransactions{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#transaction, #expenseTransaction{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 250;
+}
+
+#transaction li, #expenseTransaction li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 5px 2px rgb(34, 24, 26);
+}
