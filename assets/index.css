@@ -25,7 +25,7 @@ h2 {
     padding-bottom: 20px;
     padding-top: 20px;
     margin-top: 30px;
-    background-image: linear-gradient(to right, rgb(147, 243, 147), rgb(241, 139, 139));
+    background-image: linear-gradient(to right top, rgb(147, 243, 147), rgb(241, 139, 139));
     background-size: 100%;
     animation: bg-animation 10s infinite alternate;
 }
@@ -144,7 +144,7 @@ h2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-image: linear-gradient(to left, rgb(147, 243, 147), rgb(241, 139, 139));
+    background-image: linear-gradient(to right top, rgb(147, 243, 147), rgb(241, 139, 139));
 
 }
 .myForm form {
